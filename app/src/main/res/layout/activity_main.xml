@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //Julia Woeste
+    //assignment 1 part 2
+    //2/21/22
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="311dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Welcome to Four In A Row!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="131dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="140dp"
+        android:text="Directions:"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduction" />
+
+    <TextView
+        android:id="@+id/firstDir"
+        android:layout_width="247dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="* Connect 4 tokens in a row diagonally, horizontally, vertically "
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directions" />
+
+    <TextView
+        android:id="@+id/secondDir"
+        android:layout_width="247dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="* Only place one token at a time"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDir" />
+
+    <TextView
+        android:id="@+id/thirdDir"
+        android:layout_width="247dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="79dp"
+        android:gravity="center"
+        android:text="* Player 1 is red. Computer player is blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondDir" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="149dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/startgame"
+        android:onClick="onSendMessage"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdDir" />
+
+    <EditText
+        android:id="@+id/player1Name"
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/playername"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdDir" />
+
+    <TextView
+        android:id="@+id/enterName"
+        android:layout_width="215dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:text="Player 1 :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdDir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

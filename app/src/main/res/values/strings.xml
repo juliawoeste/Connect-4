@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Four In A Row</string>
+    <string name="startgame">Start Game</string>
+    <string name="playername">Enter your name</string>
+</resources>
